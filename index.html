@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <script src="https://kit.fontawesome.com/1dc88ddb9d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <style>
+        .btn-custombrown {
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #B68C5A;
+            --bs-btn-border-color: #B68C5A;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #c59860;
+            --bs-btn-hover-border-color: #c59860;
+            --bs-btn-focus-shadow-rgb: 60, 153, 110;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #a0825c;
+            --bs-btn-active-border-color: #a0825c;
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: #B68C5A;
+            --bs-btn-disabled-border-color: #B68C5A;
+        }
+
+        .card:hover {
+            background-color: rgb(242, 242, 242);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="w-75 mx-auto">
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img class="navbar-brand" src="legal-solution-resources/images/logo2.png" alt="logo">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services <i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cases <i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog <i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+
+                    </ul>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="d-flex btn btn-custombrown px-4 py-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Free Consultation
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Free Consultation</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <p>For Free Consultation, Contact Us by our Office. <br> Thank You</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-custombrown"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner -->
+        <div class="p-5" style="background-image: url(legal-solution-resources/images/banner.png);">
+
+            <h1 class="text-center pt-5 fs-1 fw-bold text-white">We Provide Effective <br> Legal Solutions</h1>
+            <p class="text-center pt-3 text-white">There are many variations of passages available, but
+                the majority <br>
+                have suffered alteration in some form, by injected humour.</p>
+            <div class="w-50 mx-auto py-3">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-3" type="search" placeholder="Search Your Services"
+                        aria-label="Search">
+                    <button class="btn btn-custombrown  px-4 py-3" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <main class="w-75 mx-auto">
+        <!-- The Legal Practice Area -->
+        <div class="mt-4">
+            <h3 class="text-center pt-5 fw-bold">The Legal Practice Area</h3>
+            <p class="text-center pt-3 w-75 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+            <!-- cards  -->
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 text-center mt-5 g-0">
+                <div class="col">
+                    <div class="card h-100 p-5 border-0">
+                        <img src="legal-solution-resources/images/business.png"
+                            class="card-img-top w-25 mx-auto d-block h-100" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Business Law</h4>
+                            <p class="card-text">There are many variations of passages available, but the
+                                majority have suffered alteration in some form, by injected humour.</p>
+                            <button type="button" class="btn border-0"><i class="fa-solid fa-circle-right fa-xl pt-4" style="color: #b68c5a;"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-5 border-0">
+                        <img src="legal-solution-resources/images/criminal.png"
+                            class="card-img-top w-25 mx-auto d-block h-100" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Criminal Law</h4>
+                            <p class="card-text">There are many variations of passages available, but the
+                                majority have suffered alteration in some form, by injected humour.</p>
+                            <button type="button" class="btn border-0"><i class="fa-solid fa-circle-right fa-xl pt-4" style="color: #b68c5a;"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-5 border-0">
+                        <img src="legal-solution-resources/images/child.png"
+                            class="card-img-top w-25 mx-auto d-block h-100" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Child Support
+                            </h4>
+                            <p class="card-text">There are many variations of passages available, but the
+                                majority have suffered alteration in some form, by injected humour.</p>
+                            <button type="button" class="btn border-0"><i class="fa-solid fa-circle-right fa-xl pt-4" style="color: #b68c5a;"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-5 border-0">
+                        <img src="legal-solution-resources/images/education.png"
+                            class="card-img-top w-25 mx-auto d-block h-100" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Education Law</h4>
+                            <p class="card-text">There are many variations of passages available, but the
+                                majority have suffered alteration in some form, by injected humour.</p>
+                            <button type="button" class="btn border-0"><i class="fa-solid fa-circle-right fa-xl pt-4" style="color: #b68c5a;"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-5 border-0">
+                        <img src="legal-solution-resources/images/divorce.png"
+                            class="card-img-top w-25 mx-auto d-block h-100" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Divorce Law</h4>
+                            <p class="card-text">There are many variations of passages available, but the
+                                majority have suffered alteration in some form, by injected humour.</p>
+                            <button type="button" class="btn border-0"><i class="fa-solid fa-circle-right fa-xl pt-4" style="color: #b68c5a;"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 p-5 border-0">
+                        <img src="legal-solution-resources/images/tax.png"
+                            class="card-img-top w-25 mx-auto d-block h-100" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">Tax Law</h4>
+                            <p class="card-text">There are many variations of passages available, but the
+                                majority have suffered alteration in some form, by injected humour.</p>
+                            <button type="button" class="btn border-0"><i class="fa-solid fa-circle-right fa-xl pt-4" style="color: #b68c5a;"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- client Section  -->
+        <div class="mt-4">
+            <h3 class="text-center pt-5 fw-bold">What Our Client Say</h3>
+            <p class="text-center pt-3 w-75 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            <!-- carousel -->
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="legal-solution-resources/images/slider-1.jpg" class="d-block w-100 opacity-75" alt="...">
+                    <div class="carousel-caption">
+                        <img src="legal-solution-resources/images/uix-designer.jpg" class="w-25 rounded-circle pb-3" alt="...">
+                      <h5>Awlad Hossain</h5>
+                      <p>UIX Designer</p>
+                      <p class="d-none d-md-block">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin  literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney  College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="legal-solution-resources/images/slider-2.jpg" class="d-block w-100 opacity-75" alt="...">
+                    <div class="carousel-caption">
+                        <img src="legal-solution-resources/images/uix-designer.jpg" class="w-25 rounded-circle pb-3" alt="...">
+                      <h5>Awlad Hossain</h5>
+                      <p>UIX Designer</p>
+                      <p class="d-none d-md-block">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="legal-solution-resources/images/slider-3.jpg" class="d-block w-100 opacity-75" alt="...">
+                    <div class="carousel-caption">
+                        <img src="legal-solution-resources/images/uix-designer.jpg" class="w-25 rounded-circle pb-3" alt="...">
+                      <h5>Awlad Hossain</h5>
+                      <p>UIX Designer</p>
+                      <p class="d-none d-md-block">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <!-- FAQ -->
+        <div class="mt-4">
+            <h3 class="text-center pt-5 fw-bold">Frequently Asked Any Questions</h3>
+            <p class="text-center pt-3 w-75 mx-auto">There are many variations of passages of available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+            <!-- accordion -->
+            <div class="row row-cols-1 row-cols-md-2 mt-5">
+                <div class="col h-100">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item bg-secondary-subtle mb-4 border-0 rounded">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button bg-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Difference Between Flexbox and Grid
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Grid and flexbox. The basic difference between CSS grid layout and CSS flexbox layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item bg-secondary-subtle mb-4 border-0 rounded">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button bg-secondary-subtle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Propose of Media Query
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width. Media queries are used for the following: To conditionally apply styles with the CSS <code>@media</code> and <code>@import</code> at-rules.</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item bg-secondary-subtle mb-4 border-0 rounded">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button bg-secondary-subtle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              What is CSS BOX MODEL and How does it work?
+                            </button>
+                          </h2>
+                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>A box in CSS consists of a content area, which is where any text, images, or other HTML elements are displayed. This is optionally surrounded by padding, a border, and a margin, on one or more sides. The box model describes how these elements work together to create a box as displayed by CSS.</strong>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item bg-secondary-subtle mb-4 border-0 rounded">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button bg-secondary-subtle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                What is Semantic Tag?
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>Semantic HTML tags are tags that define the meaning of the content they contain. For example, tags like <code> < header>, < article>, and < footer> </code>are semantic HTML tags. They clearly indicate the role of the content they contain. On the other hand, tags like <code>< div> , < span></code> are typical examples of non-semantic HTML elements.</strong>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col d-none d-md-block h-100">
+                    <img src="legal-solution-resources/images/faq.png" class="img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div class="mt-4 mb-5">
+            <h3 class="text-center pt-5 fw-bold">Contact With Us</h3>
+            <p class="text-center pt-3 w-75 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+            <div class="row row-cols-1 row-cols-md-2 mt-5 g-5">
+                
+                <!-- Contact Us Cards  -->
+                <div class="col h-100">
+                    <div class="row row-cols-1 row-cols-md-2 text-center g-0">
+                        <div class="col">
+                            <div class="card h-100 py-5">
+                                <img src="legal-solution-resources/images/location.png" class="card-img-top w-25 mx-auto d-block" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title fw-semibold">Address</h4>
+                                    <p class="card-text">A108 Adam Street,<br> New York, NY 535022.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 py-5">
+                                <img src="legal-solution-resources/images/call.png" class="card-img-top w-25 mx-auto d-block" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title fw-semibold">Call Us</h4>
+                                    <p class="card-text">+88 01750 00 00 00 <br> +88 01750 00 00 00</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 py-5">
+                                <img src="legal-solution-resources/images/email.png" class="card-img-top w-25 mx-auto d-block" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title fw-semibold">Email Us
+                                    </h4>
+                                    <p class="card-text">info@gmail.com <br>info@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 py-5">
+                                <img src="legal-solution-resources/images/time.png" class="card-img-top w-25 mx-auto d-block" alt="...">
+                                <div class="card-body">
+                                    <h4 class="card-title fw-semibold">Working Hours</h4>
+                                    <p class="card-text">Mon-Fri: 9AM to 5PM <br>
+                                                        Sunday: 9AM to 1 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- form  -->
+                <div class="col h-100">
+                    <form>
+                        <div class="mb-3">
+                          <input type="text" class="form-control py-4 border-0 bg-dark-subtle" id="inputname" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                          <input type="email" class="form-control py-4 border-0 bg-dark-subtle" id="inputemail" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                          <input type="text" class="form-control py-4 border-0 bg-dark-subtle" id="inputsubject" placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                          <input type="text" class="form-control py-5 border-0 bg-dark-subtle" id="inputmessage" placeholder="Your Message">
+                        </div>
+                        <button type="submit" class="w-100 btn btn-custombrown px-4 py-3">Send Message</button>
+                      </form>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="w-75 mx-auto bg-dark">
+
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
